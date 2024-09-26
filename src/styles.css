@@ -3,18 +3,22 @@
 
   /* smoother rendering particularly on macOS systems */
   -webkit-font-smoothing: antialiased;
-  font-family: sans-serif;
+  font-family: Helvetics, sans-serif;
   font-size: 16px;
 }
 
 body {
-  margin: 0;
+  margin: 3rem;
   height: 100%;
   text-align: center;
 }
 
 h1 {
   font-size: 1.5rem;
+}
+
+p {
+  margin: 0;
 }
 
 form {
@@ -30,6 +34,8 @@ input {
   padding: 8px 12px;
   border-radius: 50;
   border: 1px dashed aqua;
+  font-size: 1rem;
+  width: auto;
 }
 
 form button {
@@ -46,7 +52,7 @@ form button:active {
 #div-alert {
   min-width: 50px;
   height: 20px;
-  padding: 5px;
-  background-color: white;
+  padding: 7px 10px 5px 10px;
+  background-color: rgb(237, 118, 255);
   border: 1px dashed aqua;
 }
