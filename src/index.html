@@ -2,11 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Practice Web App</title>
     <!-- Favicon -->
     <link rel="icon" href="./assets/RF-Favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Hello, World! hehe</h1>
+    <h1>Hi there! <br/> Log in or register</h1>
+    <form id="registerForm">
+        <input type="text" id="name" required placeholder="Enter your name">
+        <div id="div-alert"></div>
+        <input type="email" id="email" required placeholder="Enter your email">
+        <input type="password" id="password" required placeholder="Enter your password">
+        <button type="submit">Register</button>
+    </form>
+
+
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
