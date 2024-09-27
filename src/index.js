@@ -30,7 +30,7 @@ function nameValidation(userName) {
 
   if (splitName.length >= 2) {
     console.log("Correct: The name has at least two words.");
-    document.getElementById("name").style.border = "none";
+    document.getElementById("name").style.border = "1px dashed aqua";
     document.getElementById("name-error").hidden = true;
   } else {
     console.log("Wrong, the name has at least two words.");
@@ -50,7 +50,7 @@ function emailValidation(userEmail) {
 
   if (emailPattern.test(userEmail)) {
     console.log("Correct: The email format is valid.");
-    document.getElementById("email").style.border = "none";
+    document.getElementById("email").style.border = "1px dashed aqua";
     document.getElementById("email-error").hidden = true;
   } else {
     console.log("Wrong: The email format is invalid.");
@@ -64,16 +64,16 @@ function emailValidation(userEmail) {
 
 function passwordValidation(userPassword) {
   console.log("passwordValidations is being called");
-  console.log(userPassword);
+  console.log("logged password :" + userPassword);
   const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
   if (passwordPattern.test(userPassword)) {
     console.log("Correct: The password format is valid.");
-    document.getElementById("password").style.border = "none";
+    document.getElementById("password").style.border = "1px dashed aqua";
     document.getElementById("pass-error").hidden = true;
   } else {
     console.log("Wrong: The password format is invalid");
-    document.getElementById("email").style.border = "3px solid red";
+    document.getElementById("password").style.border = "3px solid red";
     document.getElementById("pass-error").innerHTML = "Your password must have at least one lowercase letter, one uppercase letter, one digit, and is at least 8 characters long";
     document.getElementById("pass-error").style.color = "red";
     document.getElementById("pass-error").hidden = false;
