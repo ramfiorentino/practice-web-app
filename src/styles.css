@@ -38,7 +38,15 @@ input {
   width: auto;
 }
 
-form button {
+.input-border--valid {
+  border: 1px dashed aqua !important;
+}
+
+.input-border--invalid {
+  border: 3px solid red;
+}
+
+button {
   background-color: aqua;
   padding: 8px 12px;
   border-radius: 50;
@@ -46,7 +54,7 @@ form button {
   font-size: 1rem;
 }
 
-form button:active {
+button:active {
   scale: 105%;
 }
 

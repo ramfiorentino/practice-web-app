@@ -9,18 +9,25 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Hi there! <br/> Log in or register</h1>
     <form id="registerForm">
-        <div id="div-alert">Happy alert box!</div>
+      <h1>Hi there! <br/> Register here:</h1>
         <input type="text" id="name" required placeholder="Enter your name" autocomplete="name">
         <p id="name-error" hidden></p>
         <input type="email" id="email" required placeholder="Enter your email" autocomplete="email">
         <p id="email-error" hidden></p>
         <input type="password" id="password" required placeholder="Enter your password" autocomplete="new-password">
-        <p id="pass-error" hidden></p>
-        <button id="btn-submit" type="submit">Register</button>
+        <p id="password-error" hidden></p>
+        <button id="btn-register" type="submit">Register</button>
     </form>
 
+    <form id="loginForm" style="display: none;">
+      <h1>Log in here:</h1>
+        <input type="email" id="emailLogin" required placeholder="Enter your email" autocomplete="email">
+        <p id="emailLogin-error" hidden></p>
+        <input type="password" id="passwordLogin" required placeholder="Enter your password" autocomplete="new-password">
+        <p id="passwordLogin-error" hidden></p>
+        <button id="btn-login" type="submit">Login</button>
+    </form>
 
     <script type="module" src="./index.js"></script>
   </body>
